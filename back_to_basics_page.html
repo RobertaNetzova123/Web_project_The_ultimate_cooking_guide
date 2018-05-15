@@ -2,25 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Back to basics</title>
     <link rel="stylesheet" href="about_us_style.css">
 </head>
+
 <body>
-    <ul>
-        <li><a href="home_page.html">Home</a></li>
-        <li><a href="about_us_page.html">About us</a></li>
-        <li><a href = "back_to_basics_page.html">Back to Basics</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Other sites</a>
-            <div class="dropdown-content">
-                <a target="_blank" href="http://www.laurainthekitchen.com/">Laura Vitale</a>
-                <a target="_blank" href="https://www.bakingmad.com/">BakingMad</a>
-                <a target="_blank" href="https://www.bbcgoodfood.com/recipes/category/healthy">Good food</a>
-            </div>
-        </li>
-    </ul>
+    <div id="scroll">
+        <ul>
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="about_us_page.html">About us</a></li>
+            <li><a href = "back_to_basics_page.html">Back to Basics</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Other sites</a>
+                <div class="dropdown-content">
+                    <a target="_blank" href="http://www.laurainthekitchen.com/">Laura Vitale</a>
+                    <a target="_blank" href="https://www.bakingmad.com/">BakingMad</a>
+                    <a target="_blank" href="https://www.bbcgoodfood.com/recipes/category/healthy">Good food</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("scroll");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky");
+            }
+             else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!--............................................................-->
 
     <div class="blurred_background">
+        <div class = "dark_background"></div>
     </div>
+
+    <div id="slider">
+        <div id="box">
+            <img src="grill.jpg">
+            <!--<div id = "slider_text">Ballet</div>-->
+        </div>
+        <div id = "slider_text">
+            <p id = "slider_name">GRILL</p>
+            <p id='slider_url'>Go to recipe</p>
+        </div>
+        <button class = "prev" onclick = "prevImage()"> < </button>
+        <button class= "next" onclick = "nextImage()"> > </button>
+    </div>
+
+    <script src="slideshow/js_photo_style_script.js"></script>
+
+    <div class = "position">
+        <div class="block_text block_title"><span class = "underline">Tehniques</span></div>
+        <div class="container">
+            <img src="bake.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <span class="image_text">ROAST</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="saute.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">SAUTE</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="grill.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">GRILL</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="fry.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">FRY</div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "position">
+        <div class="block_text block_title"><span class = "underline">Basic recipes</span></div>
+        <div class="container">
+            <img src="soup.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <span class="image_text">CHICKEN SOUP</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="bread.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">BREAD</div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="boiled_eggs.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">GRILL</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="pizza.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">PIZZA</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="risotto.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">RISOTTO</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="tarator.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">TARATOR</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="steak.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">PORK STEAK</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="salmon.jpg" class = "image">
+            <div class="overlay overlayFade" onclick="location.href='#'">
+                <div class="image_text">BACKED SALMON</div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>

@@ -137,7 +137,7 @@ img {
 #slider {
     width: 1000px;
     height: 560px;
-    margin: 70px auto;
+    margin: 80px auto;
     position: relative;
     border: 10px solid whitesmoke;
     /*box-shadow: 0px 0px 5px 2px #ccc;*/
@@ -196,13 +196,17 @@ button:hover {
 }
 /*.......................................................................*/
 
-#position {
-    margin-top: 50px;
+.position {
     margin: auto;
+    margin-top: 100px;
+
     width: 60%;
     padding: 10px;
 }
 .container {
+    margin: auto;
+    margin-top: 50px;
+
     position: relative;
     width: 200px;
     height: 200px;
@@ -231,8 +235,10 @@ button:hover {
     cursor:pointer;
 }
 .image_text {
+
     color: white;
     font-family: sans-serif;
+    text-align: center;
     border: 3px solid #73AD21;
     padding: 10px;
     position: absolute;
@@ -258,4 +264,26 @@ button:hover {
     width: 100%;
 
 }
+.block_text {
+    width: 1020px;
+    padding-bottom: 15px;
+    background-color:rgba(0, 0, 0, 0.4);
+    /*font-size: 250%;*/
+    /*color: white;*/
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+}
+.block_title {
+    text-align: center;
+    font-size: 250%;
+    color: white;
+
+}
+.underline {
+
+    border-bottom: 3px solid #73AD21;
+    margin-bottom: 10px ;
+
+}
