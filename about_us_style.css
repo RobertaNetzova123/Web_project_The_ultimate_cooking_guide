@@ -1,4 +1,13 @@
-
+.sticky {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+}
+#scroll {
+    z-index: 1;
+    /*position: ;*/
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -51,10 +60,17 @@ li.dropdown {
 }
 
 body, html {
-
+    /*overflow:hidden;*/
     height: 100%;
     margin: 0;
 }
+
+
+/*body, html {*/
+
+    /*height: 100%;*/
+    /*margin: 0;*/
+/*}*/
 
 .text p {
 
@@ -92,61 +108,154 @@ body, html {
     transform: scale(1.1);
     z-index: -1;
 }
-/*Not used for now but will be helpful in future for blurred line
 
-.blur {
-    background: url("https://media.kaufland.com/images/PPIM/AP_Content_1354/deu/73/53/Asset_1637353.jpg") no-repeat center center fixed;
-    background-size: cover;
-    overflow: hidden;
-    filter: blur(13px);
-    position: absolute;
-    height: 300px;
-    top: -50px;
-    left: -50px;
-    right: -50px;
-    bottom: -50px;
+.mySlides {
+    display:none;
+}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
 }
 
-.widget {
-    border-top: 2px solid rgba(255, 255, 255, .5);
-    border-bottom: 2px solid rgba(255, 255, 255, .5);
-    height: 200px;
-    width: 100%;
-    overflow: hidden;
+/*slideshow*/
+
+img {
+    object-fit: cover;
+    width:1000px;
+    height: 560px;
+    /*padding-left: 30%;*/
+    /*padding-top: 2%;*/
+
+}
+#box {
+    position: relative;
+}
+#slider {
+    width: 1000px;
+    height: 560px;
+    margin: 70px auto;
+    position: relative;
+    border: 10px solid whitesmoke;
+    /*box-shadow: 0px 0px 5px 2px #ccc;*/
+}
+#slider_text {
+
+    padding: 0 100px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.4);
+    font-size: 250%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#slider_name {
+    border-bottom: 3px solid #73AD21;
+    margin-bottom: 10px ;
 }
 
-.center {
+#slider_url {
+
+    width:90px; /* or whatever width you want. */
+    max-width:90px; /* or whatever width you want. */
+    display: inline-block;
+    background-color: #73AD21;
+    font-size: 45%;
+    padding: 10px ;
+
+}
+#slider_url:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    color: white;
     position: absolute;
+    top: 45%;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.next  {
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 942px;
+}
+.prev {
+    border-radius: 0px 10px 10px 0px;
+}
+/*.......................................................................*/
+
+#position {
+    margin-top: 50px;
     margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
+    width: 60%;
+    padding: 10px;
 }
-
-.text {
+.container {
+    position: relative;
+    width: 200px;
     height: 200px;
-    width: 340px;
+    display: inline-block;
+    padding: 15px;
+}
+.image {
+    object-fit: cover;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+
+
 }
 
-.text h1 {
-    text-align: center;
-    text-shadow: 1px 1px rgba(0, 0, 0, .1);
-    color: #ffffff;
-    margin-top: 57px;
-    font-family: 'Lora', serif;
-    font-weight: 700;
-    font-size: 38px;
+.overlay {
+    position: absolute;
+    /*transition: all .10s ease;*/
+    transition: width 10s;
+    opacity: 0;
+    background-color: #eee;
 }
 
-.text p {
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 1px 1px rgba(0, 0, 0, .1);
-    margin-top: 0px;
-    font-family: 'Lato', serif;
-    font-weight: 400;
-    font-size: 22px;
+.container:hover .overlay{
+    opacity: 1;
+    cursor:pointer;
 }
-*/
+.image_text {
+    color: white;
+    font-family: sans-serif;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.overlayFade {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.71);
+}
+.container:hover .overlayLeft {
+    width: 100%;
+}
+
+.dark_background {
+    background-color: rgba(20, 20, 20, 0.71);
+    height: 100%;
+    width: 100%;
+
+}
+
