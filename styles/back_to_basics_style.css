@@ -1,0 +1,150 @@
+/*SLIDER STYLE*/
+
+img {
+    object-fit: cover;
+    width:1000px;
+    height: 560px;
+}
+#box {
+    position: relative;
+}
+#slider {
+    width: 1000px;
+    height: 560px;
+    margin: 80px auto;
+    border: 10px solid whitesmoke;
+}
+#slider_text {
+
+    padding: 0 100px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.4);
+    font-size: 250%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#slider_name {
+    border-bottom: 3px solid #73AD21;
+    margin-bottom: 10px ;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+#slider_url {
+
+    width:90px;
+    max-width:90px;
+    display: inline-block;
+    background-color: #73AD21;
+    font-size: 45%;
+    padding: 10px ;
+}
+#slider_url:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 45%;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.next  {
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 942px;
+}
+.prev {
+    border-radius: 0px 10px 10px 0px;
+}
+
+/*SMALL GALLERY STYLE*/
+
+.position {
+    margin: auto;
+    margin-top: 100px;
+
+    width: 60%;
+    padding: 10px;
+}
+.container {
+    margin: auto;
+    margin-top: 50px;
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    padding: 15px;
+}
+.image {
+    object-fit: cover;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    transition: width 10s;
+    opacity: 0;
+    background-color: #eee;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+    cursor:pointer;
+}
+.image_text {
+
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.overlayFade {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.71);
+}
+
+.block_text {
+    width: 1020px;
+    padding-bottom: 15px;
+    background-color:rgba(0, 0, 0, 0.4);
+    /*font-size: 250%;*/
+    /*color: white;*/
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.block_title {
+    text-align: center;
+    font-size: 250%;
+    color: white;
+}
+.underline {
+    border-bottom: 3px solid #73AD21;
+    margin-bottom: 10px ;
+}

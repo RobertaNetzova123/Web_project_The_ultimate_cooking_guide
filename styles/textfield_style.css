@@ -1,0 +1,42 @@
+.text p {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    text-shadow: 1px 1px rgba(0, 0, 0, .1);
+    color: rgba(192, 197, 178, 0.52);
+    font-size: 200%;
+
+}
+
+.centered {
+    position:absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(20, 20, 20, 0.71);
+
+}
+.title {
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    color: #f1f1f1;
+    margin-top: 57px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 38px;
+}
+.paragraph_title {
+
+    margin-left: 10%;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    color: #f1f1f1;
+    display: block;
+    font-size: 200%;
+}
+.headerImg {
+    width:  40%;
+    height: 20%;
+    position: relative;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 30%;
+}

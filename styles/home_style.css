@@ -1,0 +1,25 @@
+body, html {
+    overflow:hidden;
+}
+.background_photo {
+
+    background: url("https://media.kaufland.com/images/PPIM/AP_Content_1354/deu/73/53/Asset_1637353.jpg") no-repeat center fixed;
+    height: 100%;
+    background-size: cover;
+}
+
+.quote {
+    padding: 25px 15px ;
+
+    background-color:rgba(0, 0, 0, 0.8);
+
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

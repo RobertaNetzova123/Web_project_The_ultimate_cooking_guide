@@ -1,0 +1,289 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+}
+#scroll {
+    z-index: 1;
+    /*position: ;*/
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body, html {
+    /*overflow:hidden;*/
+    height: 100%;
+    margin: 0;
+}
+
+
+/*body, html {*/
+
+    /*height: 100%;*/
+    /*margin: 0;*/
+/*}*/
+
+.text p {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    text-shadow: 1px 1px rgba(0, 0, 0, .1);
+    color: rgba(192, 197, 178, 0.52);
+    font-size: 200%;
+
+}
+.centered {
+    position:absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(20, 20, 20, 0.71);
+
+}
+.title {
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    color: #f1f1f1;
+    margin-top: 57px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.blurred_background {
+    background: url("https://media.kaufland.com/images/PPIM/AP_Content_1354/deu/73/53/Asset_1637353.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    filter: blur(8px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.mySlides {
+    display:none;
+}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+}
+.w3-badge {
+    height:13px;
+    width:13px;
+    padding:0
+}
+
+/*slideshow*/
+
+img {
+    object-fit: cover;
+    width:1000px;
+    height: 560px;
+    /*padding-left: 30%;*/
+    /*padding-top: 2%;*/
+
+}
+#box {
+    position: relative;
+}
+#slider {
+    width: 1000px;
+    height: 560px;
+    margin: 80px auto;
+    position: relative;
+    border: 10px solid whitesmoke;
+    /*box-shadow: 0px 0px 5px 2px #ccc;*/
+}
+#slider_text {
+
+    padding: 0 100px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.4);
+    font-size: 250%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#slider_name {
+    border-bottom: 3px solid #73AD21;
+    margin-bottom: 10px ;
+}
+
+#slider_url {
+
+    width:90px; /* or whatever width you want. */
+    max-width:90px; /* or whatever width you want. */
+    display: inline-block;
+    background-color: #73AD21;
+    font-size: 45%;
+    padding: 10px ;
+
+}
+#slider_url:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 45%;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.next  {
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 942px;
+}
+.prev {
+    border-radius: 0px 10px 10px 0px;
+}
+/*.......................................................................*/
+
+.position {
+    margin: auto;
+    margin-top: 100px;
+
+    width: 60%;
+    padding: 10px;
+}
+.container {
+    margin: auto;
+    margin-top: 50px;
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    padding: 15px;
+}
+.image {
+    object-fit: cover;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.overlay {
+    position: absolute;
+    /*transition: all .10s ease;*/
+    transition: width 10s;
+    opacity: 0;
+    background-color: #eee;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+    cursor:pointer;
+}
+.image_text {
+
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.overlayFade {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.71);
+}
+.container:hover .overlayLeft {
+    width: 100%;
+}
+
+.dark_background {
+    background-color: rgba(20, 20, 20, 0.71);
+    height: 100%;
+    width: 100%;
+
+}
+.block_text {
+    width: 1020px;
+    padding-bottom: 15px;
+    background-color:rgba(0, 0, 0, 0.4);
+    /*font-size: 250%;*/
+    /*color: white;*/
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.block_title {
+    text-align: center;
+    font-size: 250%;
+    color: white;
+
+}
+.underline {
+
+    border-bottom: 3px solid #73AD21;
+    margin-bottom: 10px ;
+
+}

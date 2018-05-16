@@ -1,0 +1,13 @@
+ul {
+    list-style-type: circle;
+}
+
+.ingredients {
+    margin-left: 10%;
+    display: block;
+    text-shadow: 1px 1px rgba(0, 0, 0, .1);
+    color: rgba(192, 197, 178, 0.52);
+    font-size: 200%;
+}
+
+
