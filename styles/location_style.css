@@ -1,0 +1,13 @@
+#map {
+
+    /*height: 60%;*/
+    /*width: 100%;*/
+    width: 60%;
+    height: 75%;
+    margin: 5% auto;
+}
+
+body {
+
+    overflow: hidden;
+}

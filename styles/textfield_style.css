@@ -3,7 +3,9 @@
     margin-left: 10%;
     margin-right: 10%;
     text-shadow: 1px 1px rgba(0, 0, 0, .1);
-    color: rgba(192, 197, 178, 0.52);
+    color: rgb(163, 163, 163);
+    /*color: #d1d1d1;*/
+
     font-size: 200%;
 
 }

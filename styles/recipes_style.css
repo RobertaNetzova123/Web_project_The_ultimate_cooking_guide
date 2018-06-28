@@ -6,7 +6,9 @@ ul {
     margin-left: 10%;
     display: block;
     text-shadow: 1px 1px rgba(0, 0, 0, .1);
-    color: rgba(192, 197, 178, 0.52);
+    /*color: rgba(192, 197, 178, 0.52);*/
+    /*color: #d1d1d1;*/
+    color: rgb(163, 163, 163);
     font-size: 200%;
 }
 

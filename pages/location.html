@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>home</title>
-    <link rel="stylesheet" href="../styles/home_style.css">
-    <link rel="stylesheet" href="../styles/navbar_style.css">
+    <title>Where_to_find_us</title>
 
+    <link rel="stylesheet" href="../styles/back_to_basics_style.css">
+    <link rel="stylesheet" href="../styles/blurred_background_style.css">
+    <link rel="stylesheet" href="../styles/navbar_style.css">
+    <link rel="stylesheet" href="../styles/location_style.css">
+    <script src="../scripts/map_script.js"></script>
 
 </head>
 <body>
+
+
+<div id="scroll">
     <ul id ="navbar">
         <li class = "navbar"><a href="home_page.html">Home</a></li>
         <li class = "navbar"><a href="about_us_page.html">About us</a></li>
         <li class = "navbar"><a href = "back_to_basics_page.html">Back to Basics</a></li>
-        <li class = "navbar"><a href = "location.html">Location</a></li>
+        <li class = "navbar"><a href = "#">Location</a></li>
         <li class="navbar dropdown">
             <a href="javascript:void(0)" class="dropbtn">Other sites</a>
             <div class="dropdown-content">
@@ -23,11 +29,17 @@
             </div>
         </li>
     </ul>
-    <div class="background_photo">
-        <div class="quote" >"No one is born a great cook,<br>
-                                one learns by doing"<br>
-                            <i>  ~Julia Child</i>
-        </div>
-    </div>
+</div>
+
+<div class="blurred_background">
+    <div class = "dark_background"></div>
+</div>
+
+<div id = "map"></div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/
+js?key=AIzaSyAYR00R28u2Ybx3yb-geGerKKVSQGePwmA&callback=initMap">
+</script>
+
 </body>
 </html>
